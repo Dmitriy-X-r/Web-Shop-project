@@ -1,0 +1,65 @@
+.offers {
+    .offers__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+
+        @include mobile {
+            flex-direction: column;
+        }
+    }
+
+    .offers__item {
+        color: $white;
+        width: 32%;
+        min-height: 260px;
+        background-color: $brown;
+        margin: 0 0 30px 0;
+        @include flex-center();
+        text-transform: uppercase;
+        background-size: cover;
+
+        @include tablet {
+            width: 32%;
+            min-height: 168px;
+        }
+
+        @include mobile {
+            width: 100%;
+            min-height: 248px;
+        }
+
+        & h3 {
+            @include flex-center();
+        }
+
+        /* тут дублируется, косяк, поправить надо */
+        & p {
+            @include flex-center();
+        }
+
+        &--woman {
+            background-image: url(../img/woman.jpg);
+        }
+
+        &--man {
+            background-image: url(../img/man.jpg);
+        }
+
+        &--kids {
+            background-image: url(../img/kids.jpg);
+        }
+
+        &--accessoires {
+            background-image: url(../img/accesories.jpg);
+            width: 100%;
+            margin: 0;
+        }
+    }
+
+    .offers__text {
+        @include font(18px, 22px, 900);
+        color: $pink;
+    }
+}

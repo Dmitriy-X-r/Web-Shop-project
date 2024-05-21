@@ -1,0 +1,269 @@
+.cart__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @include tablet {
+        flex-direction: column;
+    }
+}
+
+.cart__product-list {
+    margin: 0 0 72px;
+
+    @include tablet {
+        margin: 0 0 62px;
+    }
+
+    @include mobile {
+        margin: 0 0 30px;
+    }
+}
+
+.cart__product-item {
+    margin: 0 0 40px;
+    width: 100%;
+    -webkit-box-shadow: 16px 16px 17px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 16px 16px 17px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 16px 16px 17px 0px rgba(34, 60, 80, 0.2);
+    position: relative;
+}
+
+.cart__product-wrapper {
+    display: flex;
+}
+
+.cart__product-img {
+    width: 33%;
+    object-fit: cover;
+}
+
+.cart__product-info {
+    padding: 22px 0 62px 31px;
+    width: 34%;
+}
+
+.cart__product-header {
+    @include font(24px, 29px);
+    text-transform: uppercase;
+    padding: 0 0 42px;
+    max-width: 262px;
+}
+
+.cart__product-text {
+    @include font(22px, 26px);
+    color: $grey;
+}
+
+.cross {
+    fill: $grey;
+}
+
+.cart__product-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: none;
+    border: none;
+    margin: 22px 22px 0 0;
+}
+
+.cart__product-close:hover .cross {
+    fill: $black;
+}
+
+.cart__product-buttons {
+    display: flex;
+    justify-content: space-between;
+    @include font(14px, 17px);
+    margin: 0 0 128px;
+
+    @include tablet {
+        margin: 0 0 64px;
+    }
+
+    @include mobile {
+        margin: 0 0 48px;
+    }
+}
+
+.button-clear {
+    color: $grey;
+    padding: 17px 40px;
+    background-color: $white;
+    border-color: $grey;
+    text-transform: uppercase;
+
+    @include mobile {
+        padding: 17px 10px;
+    }
+}
+
+.button-continue {
+    color: $grey;
+    padding: 17px 40px;
+    text-transform: uppercase;
+    background-color: $white;
+    border-color: $grey;
+
+    @include mobile {
+        padding: 17px 10px;
+    }
+}
+
+.button-clear:hover,
+.button-continue:hover,
+.button__get-price:hover {
+    color: $white;
+    background-color: $pink;
+    border: none;
+}
+
+.cart__order {
+    margin: 0 0 0 20px;
+
+    @include tablet {
+        display: flex;
+        margin: 0;
+    }
+
+    @media(max-width: 592px ){
+        flex-direction: column;
+    }
+
+    // @include mobile {
+    //     flex-direction: column;
+    // }
+}
+
+.form__delivery {
+    width: 360px;
+
+    @media(max-width: 1300px ){
+        width: 280px;
+    }
+
+    @media(max-width: 592px ){
+        width: 100%;
+    }
+}
+
+.form__delivery-fieldset legend {
+    text-transform: uppercase;
+    margin: 0 0 20px;
+}
+
+.form__delivery-input {
+    margin: 0 0 20px;
+    min-height: 45px;
+    width: 100%;
+
+    @include tablet {
+        width: 90%;
+    }
+}
+
+.button__get-price {
+    background: none;
+    color: $grey;
+    border: 1px solid $grey;
+    text-transform: uppercase;
+    padding: 11px 15px;
+    @include font(11px, 13px);
+    margin: 0 0 57px 0;
+
+    @include tablet {
+        margin: 0 0 128px 0;
+    }
+
+    @media(max-width: 592px ){
+        margin: 0 0 48px;
+    }
+
+    // @include mobile {
+    //     margin: 0 0 48px;
+    // }
+}
+
+.cart__order-payment {
+    width: 360px;
+    min-height: 214px;
+    background-color: $light-grey;
+
+    @media(max-width: 1300px ){
+        width: 280px;
+    }
+
+    @include tablet {
+        width: 360px;
+        margin: 38px 0 0 0;
+        height: 200px;
+    }
+
+    @media(max-width: 592px ){
+        margin: 0 0 96px
+    }
+
+     @include mobile {
+        width: 100%;
+     }
+}
+
+.sub__total {
+    @include font(11px, 13px);
+    padding: 39px 0 12px 218px;
+    text-transform: uppercase;
+
+    @include mobile {
+        padding: 39px 0 12px 134px;
+    }
+}
+
+.sub__total-price {
+    padding: 0 0 0 17px;
+}
+
+.grand__total {
+    @include font(16px, 19px);
+    padding: 0 0 21px 153px;
+    text-transform: uppercase;
+
+    @include mobile {
+        padding: 0 0 21px 70px;
+    }
+}
+
+.grand__total-price {
+    color: $pink;
+    padding: 0 0 0 17px;
+}
+
+.cart__order-payment-line {
+    width: 275px;
+    text-align: center;
+    color: $grey;
+
+    @include mobile {
+        width: 180px;
+    }
+}
+
+.button-checkout {
+    width: 273px;
+    text-transform: uppercase;
+    margin: 17px 0 0 43px;
+    padding: 15px 42px;
+    color: $white;
+    background-color: $pink;
+    border: none;
+
+    @include mobile {
+        width: 180px;
+        margin: 17px 0 0 15px;
+    }
+}
+
+.button-checkout:hover {
+    color: $pink;
+    background-color: $white;
+    border: 1px solid $pink;
+}

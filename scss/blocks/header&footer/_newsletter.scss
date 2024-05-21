@@ -1,0 +1,110 @@
+.newsletter {
+    background-image: url(../img/sea.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .newsletter__wrapper {
+        min-height: 448px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include tablet {
+            flex-direction: column;
+            padding: 0 0 140px 0;
+        }
+
+        @include mobile {
+            padding: 0 0 110px 0;
+        }
+    }
+
+    .user-comment {
+        width: 359.45px;
+        min-height: 225px;
+        text-align: center;
+
+        @include tablet {
+            padding: 64px 0 18px 0;
+        }
+
+        @include mobile {
+            padding: 64px 0 29px 0;
+        }
+    }
+
+    .user-comment__text {
+        padding: 30px;
+        @include font(20px, 24px);
+        font-style: italic;
+
+        @include mobile {
+            @include font(18px, 21px);
+        }
+    }
+
+    .subscription {
+        width: 360px;
+        min-height: 142px;
+        text-align: center;
+    }
+
+    .subscription-info {
+        padding: 0 0 32px 0;
+        text-transform: uppercase;
+
+        @include tablet {
+            padding: 0 0 27px 0;
+        }
+
+        @include mobile {
+            padding: 0 0 22px 0;
+        }
+    }
+
+    .subscribe-header {
+        @include font(24px, 37px, 700);
+    }
+
+    .subscribe-text {
+        @include font(18px, 30px);
+
+        @include mobile {
+            @include font(14px, 21px);
+        }
+    }
+
+    .subscription__form {
+        //width: 350px;
+        min-height: 49px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .subscription__input {
+        width: 75%;
+        background-color: $little-grey;
+        border-radius: 20px 0 0 20px;
+        border: none;
+
+        @include mobile {
+            width: 60%;
+        }
+    }
+
+    .button-subscribe {
+        background-color: $pink;
+        color: $white;
+        border-radius: 0 20px 20px 0;
+        border: none;
+    }
+
+    .button-subscribe:hover {
+        background-color: $dark-pink;
+    }
+
+    .button-subscribe:active {
+        background-color: $dark-pink;
+        opacity: 0.5;
+    }
+}

@@ -1,0 +1,51 @@
+.feedback {
+    background-color: $dark-blue;
+
+    .feedback__wrapper {
+        min-height: 79px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include mobile {
+            flex-direction: column-reverse;
+            min-height: 140px;
+        }
+    }
+
+    .social-media__list {
+        display: flex;
+
+        @include mobile {
+            padding: 43px;
+        }
+    }
+
+    .social-media__item {
+        @include flex-center();
+        min-width: 32px;
+        min-height: 32px;
+        background-color: $white;
+        margin: 0 8px 0 0;
+    }
+
+    .facebook {
+        fill: $black;
+    }
+
+    .social-media__item:hover {
+        background-color: $pink;
+    }
+
+    .social-media__item:hover svg {
+        fill: $white;
+    }
+
+    .copyright {
+        color: $white;
+
+        @include mobile {
+            padding: 0 0 9px;
+        }
+    }
+}

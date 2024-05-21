@@ -1,0 +1,13 @@
+.title {
+    min-height: 148px;
+    background-color: $light-pink;
+    display: flex;
+    align-items: center;
+    margin: 0 0 64px;
+
+    &-header {
+        color: $pink;
+        @include font(24px, 29px);
+        text-transform: uppercase;
+    }
+}

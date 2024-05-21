@@ -1,0 +1,28 @@
+.title__catalog {
+    min-height: 148px;
+    background-color: $light-pink;
+    display: flex;
+    align-items: center;
+    margin: 0 0 64px;
+
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-header {
+        color: $pink;
+        @include font(24px, 29px);
+        text-transform: uppercase;
+    }
+
+    &-path {
+        @include font(14px, 17px);
+        text-transform: uppercase;
+    }
+
+    &-actual {
+        @include font(14px, 17px, 700);
+        color: $pink;
+    }
+}
